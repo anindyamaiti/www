@@ -1,1 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Anindya Maiti — Research & Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal site: research, teaching, projects, and contact." />
+
+  <!-- Open Graph / Twitter (nice link previews) -->
+  <meta property="og:title" content="Anindya Maiti — Research & Projects" />
+  <meta property="og:description" content="Personal site: research, teaching, projects, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anindyamaiti.github.io/" />
+  <meta property="og:image" content="https://anindyamaiti.github.io/assets/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Minimal in-page CSS for a clean look -->
+  <style>
+    :root {
+      --bg: #0f172a;          /* slate-900 */
+      --panel: #111827;       /* gray-900 */
+      --text: #e5e7eb;        /* gray-200 */
+      --muted: #9ca3af;       /* gray-400 */
+      --accent: #60a5fa;      /* blue-400 */
+      --accent-2: #a78bfa;    /* violet-400 */
+      --maxw: 960px;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header, main, footer { width: 100%; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 20px; }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 0; position: sticky; top: 0; backdrop-filter: blur(6px);
+      background: linear-gradient(to bottom, rgba(15,23,42,0.85), rgba(15,23,42,0.2));
+      z-index: 50;
+    }
+    .brand { font-weight: 700; letter-spacing: 0.3px; }
+    .links a { margin-left: 16px; color: var(--text); opacity: 0.9; }
+    .links a:hover { color: white; }
+
+    .hero {
+      margin: 24px 0 12px;
+      padding: 48px 28px;
+      background: linear-gradient(135deg, rgba(96,165,250,0.1), rgba(167,139,250,0.1));
+      border: 1px solid rgba(148,163,184,0.15);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; margin: 0 0 10px; }
+    .hero p { color: var(--muted); max-width: 60ch; margin: 0 0 16px; }
+    .btns { display:flex; gap: 10px; flex-wrap: wrap; }
+    .btn {
+      padding: 10px 14px; border-radius: 999px; border: 1px solid rgba(148,163,184,0.25);
+      background: #0b1220; color: var(--text); text-decoration: none; display:inline-flex; align-items:center; gap:8px;
+    }
+    .btn.primary { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #0b1220; border: none; font-weight: 600; }
+
+    section { margin: 40px 0; }
+    .panel {
+      background: var(--panel); border: 1px solid rgba(148,163,184,0.12);
+      border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px;
+    }
+    h2 { margin: 0 0 12px; font-size: 22px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card { background: #0b1220; border: 1px solid rgba(148,163,184,0.15); padding: 16px; border-radius: 12px; }
+    .card h3 { margin: 4px 0 6px; font-size: 18px; }
+    .muted { color: var(--muted); }
+    code, pre { background: #0b1220; border: 1px solid rgba(148,163,184,0.2); border-radius: 10px; }
+    code { padding: 2px 6px; }
+    pre { padding: 12px; overflow: auto; }
+    footer { margin: 50px 0 20px; text-align: center; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="wrap nav" aria-label="Primary">
+    <div class="brand">Anindya Maiti</div>
+    <nav class="links" aria-label="Site">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero panel" id="home" aria-labelledby="title">
+      <h1 id="title">Research • Teaching • Open Science</h1>
+      <p>Assistant Professor, Computer Science @ OU. Interests: privacy & security, Web3, data systems, and AI practice. This is a lightweight site you can extend into a full portfolio or group page.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">Explore Projects</a>
+        <a class="btn" href="https://github.com/anindyamaiti" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="mailto:am@ou.edu">Email</a>
+      </div>
+    </section>
+
+    <section id="about" class="panel" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <p>Short bio goes here. Replace this with a 2–3 sentence summary of your current roles, lab, and research areas. Add a headshot image by placing <code>headshot.jpg</code> in <code>/assets/</code> and referencing it here.</p>
+      <p class="muted">Tip: Keep it concise on the landing page; link to a longer CV or Google Scholar.</p>
+    </section>
+
+    <section id="projects" class="panel" aria-labelledby="projects-h">
+      <h2 id="projects-h">Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>SoonerAI</h3>
+          <p class="muted">AI-literacy platform at OU. Curriculum, workshops, and GPU-backed demos.</p>
+          <p><a href="#" aria-label="SoonerAI link">Learn more →</a></p>
+        </article>
+        <article class="card">
+          <h3>MagnetDB</h3>
+          <p class="muted">Large-scale BitTorrent dataset; privacy & competition analysis.</p>
+          <p><a href="#" aria-label="MagnetDB link">Dataset & docs →</a></p>
+        </article>
+        <article class="card">
+          <h3>NinjaDoH</h3>
+          <p class="muted">Censorship-resistant DoH using IPNS and moving-target infra.</p>
+          <p><a href="#" aria-label="NinjaDoH link">Read the paper →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="teaching" class="panel" aria-labelledby="teach-h">
+      <h2 id="teach-h">Teaching</h2>
+      <ul>
+        <li>CS 5903: Perspectives on Computing — syllabus, slides, and assignments.</li>
+        <li>CS 5388: Blockchains & Cryptocurrencies — labs, notes, and readings.</li>
+        <li>CS 5970: Cyber Attacks & Defenses — exercises and demos.</li>
+      </ul>
+      <p class="muted">Host course pages here, or link to Canvas if preferred.</p>
+    </section>
+
+    <section id="contact" class="panel" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <p>Email: <a href="mailto:am@ou.edu">am@ou.edu</a> • GitHub: <a href="https://github.com/anindyamaiti">anindyamaiti</a> • X/Bluesky/LinkedIn links as needed.</p>
+      <pre><code># Quick clone
+git clone https://github.com/USERNAME/REPO.git
+cd REPO
+# Edit this file, commit, and push to publish via GitHub Pages
+</code></pre>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    © <span id="year"></span> Anindya Maiti • Built with plain HTML/CSS on GitHub Pages
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
